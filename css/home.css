@@ -19,7 +19,7 @@ header {
   height: 520px;
 }
 
-.none{
+.none {
   display: none;
 }
 
@@ -34,16 +34,16 @@ header {
   width: 100%;
   left: 0;
   top: 0;
-} 
+}
 
-.menu.sticky{
+.menu.sticky {
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
   padding: 20px 0px 10px;
   background-color: black;
   background-image: none;
-} 
+}
 
-.menu a{
+.menu a {
   position: relative;
   list-style: none;
 }
@@ -61,12 +61,12 @@ header {
   text-align: center;
 }
 
-.menu a li:hover{
+.menu a li:hover {
   border-bottom: 4px solid #ffffff;
   font-weight: bold;
 }
 
-#options{
+#options {
   display: flex;
   flex-direction: column;
 }
@@ -158,9 +158,10 @@ section {
   padding: 40px 5% 40px 5%;
   text-align: left;
   width: 38%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
-
 
 .title-home {
   text-align: left;
@@ -208,7 +209,6 @@ footer {
   padding-bottom: 19px;
 }
 
-
 button {
   padding: 10px 20px 10px 20px;
   font-size: 15px;
@@ -222,7 +222,7 @@ button {
 
   .menu {
     text-align: center;
-    background: #fff!important;
+    background: #fff !important;
     transition: 500ms;
     position: fixed;
     display: block;
@@ -251,10 +251,10 @@ button {
     transition: 200ms;
   }
 
-  li{
-    color: black!important;
+  li {
+    color: black !important;
   }
-  
+
   nav ul a li:hover {
     border-bottom: 1px black solid;
   }

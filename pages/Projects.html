@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="../css/projects.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="shortcut icon" href="assets/favIcon.png" type="image/x-icon" />
+  <title>Luiz Alencar | Projects</title>
+</head>
+
+<body>
+  <header>
+    <div class="bg-image">
+      <div class="bg-color">
+        <nav>
+          <div class="toggle" onclick="toggleMenu();"></div>
+          <ul class="menu">
+            <a href="../index.html">
+              <li>HOME</li>
+            </a>
+            <a href="./pages/Projects.html">
+              <li>PROJECTS</li>
+            </a>
+          </ul>
+        </nav>
+        <div class="name">
+          <div id="title" class="title">Projects</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section>
+      <div class="projectsContainer">
+        <div class="projectBx">
+          <div class="imgContainer">
+            <img
+              src="https://our-neighbors.herokuapp.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.3e07849c.png&w=384&q=75"
+              alt="appImg">
+          </div>
+          <div class="infoContainer">
+            <h1>Our Neighbours</h1>
+            <p>It is a Crownfunding that uses blockchain to help the world.</p>
+            <div class="links">
+              <a target="_blank" href="https://our-neighbors.herokuapp.com/"><img style="border: 1px solid #303030;" src="../assets/OurNeighboursLogo.png"
+                  alt="githubLink"></a>
+              <a target="_blank" href="https://github.com/Our-neighbors/our-neighbors"><img src="../assets/github.png"
+                  alt="githubLink"></a>
+            </div>
+          </div>
+        </div>
+        <div class="projectBx">
+          <div class="imgContainer">
+            <img
+              src="https://luiz-k-alencar.github.io/Studio-Rita-de-Cassia/assets/logo.png"
+              alt="appImg">
+          </div>
+          <div class="infoContainer">
+            <h1>Studio Rita de Cássia</h1>
+            <p>It is a beauty salon that is providing quality of life.</p>
+            <div class="links">
+              <a target="_blank" href="https://luiz-k-alencar.github.io/Studio-Rita-de-Cassia/"><img src="../assets/smallStudioLogo.png"
+                  alt="githubLink"></a>
+              <a target="_blank" href="https://github.com/luiz-k-alencar/Studio-Rita-de-Cassia"><img src="../assets/github.png"
+                  alt="githubLink"></a>
+            </div>
+          </div>
+        </div>
+        <div class="projectBx">
+          <div class="imgContainer">
+            <img
+              src="https://academia-all-sport.herokuapp.com/assets/All%20sports%20-%20black.png"
+              alt="appImg">
+          </div>
+          <div class="infoContainer">
+            <h1>All Sports Gym</h1>
+            <p>All sport is a gym that ranges from training to martial arts.</p>
+            <div class="links">
+              <a target="_blank" href="https://academia-all-sport.herokuapp.com/"><img src="https://academia-all-sport.herokuapp.com/assets/Icon.jpg"
+                  alt="githubLink"></a>
+              <a target="_blank" href="https://github.com/luiz-k-alencar/Academia-All-Sport"><img src="../assets/github.png"
+                  alt="githubLink"></a>
+            </div>
+          </div>
+        </div>
+        <div class="projectBx">
+          <div class="imgContainer">
+            <img
+              src="https://manosonline.com.br/assets/logo.png"
+              alt="appImg">
+          </div>
+          <div class="infoContainer">
+            <h1>Manos workshop</h1>
+            <p>Manos is an auto center and auto mechanic workshop</p>
+            <div class="links">
+              <a target="_blank" href="https://manosonline.com.br/"><img src="../assets/manosLogo.png"
+                  alt="githubLink"></a>
+              <a target="_blank" href="https://github.com/luiz-k-alencar/Oficina-Manos"><img src="../assets/github.png"
+                  alt="githubLink"></a>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="copyright">Copiright© por Luiz F. Kama Alencar</div>
+  </footer>
+  <!-- Jquery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+  <!-- Script -->
+  <script src="./script/script.js"></script>
+
+  <script type="text/javascript">
+    window.addEventListener("scroll", function () {
+      var header = document.querySelector(".menu");
+      header.classList.toggle("sticky", window.scrollY > 0);
+    });
+
+    function toggleMenu() {
+      var menuToggle = document.querySelector(".toggle");
+      var menu = document.querySelector(".menu");
+      menuToggle.classList.toggle("active");
+      menu.classList.toggle("active");
+    }
+  </script>
+</body>
+
+</html>
